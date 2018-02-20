@@ -1,6 +1,6 @@
 FROM centos:6
 
-RUN yum install -y epel-release centos-release-scl && \
+RUN yum install -y centos-release-scl && \
     yum -y install rh-php70-php-cli rh-php70-php-xml rh-php70-php-pecl-xdebug rh-php70-php-mbstring && \
     yum clean all
 
