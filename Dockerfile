@@ -18,6 +18,7 @@ RUN yum install -y epel-release centos-release-scl && \
         php56-php-mbstring \
         php56-php-pdo \
         php56-php-process \
+        php56-php-pecl-mailparse \
         && \
     yum clean all
 
