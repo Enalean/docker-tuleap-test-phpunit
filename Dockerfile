@@ -9,7 +9,8 @@ RUN yum -y install \
         php72-php-mbstring \
         php72-php-pdo \
         php72-php-process \
-        php72-php-zip && \
+        php72-php-zip \
+        php72-php-pecl-mailparse && \
     yum clean all
 
 CMD [ "make", "-C", "/tuleap", "phpunit-run-as-owner" ]
