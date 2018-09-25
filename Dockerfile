@@ -10,6 +10,7 @@ RUN yum -y install \
         php72-php-pdo \
         php72-php-process \
         php72-php-zip \
+        php72-php-sodium \
         php72-php-pecl-mailparse && \
     yum clean all
 
