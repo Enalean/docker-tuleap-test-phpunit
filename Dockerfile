@@ -2,7 +2,8 @@ FROM centos:6
 
 COPY remi-safe.repo /etc/yum.repos.d/
 
-RUN yum -y install \
+RUN yum install -y epel-release && \
+    yum -y install \
         php72-php-cli \
         php72-php-xml \
         php72-php-pecl-xdebug \
@@ -11,6 +12,7 @@ RUN yum -y install \
         php72-php-process \
         php72-php-zip \
         php72-php-sodium \
+        php72-php-gd \
         php72-php-pecl-mailparse && \
     yum clean all
 
