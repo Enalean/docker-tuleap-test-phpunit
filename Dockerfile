@@ -1,19 +1,20 @@
-FROM centos:6
+FROM centos:7
 
 COPY remi-safe.repo /etc/yum.repos.d/
 
 RUN yum install -y epel-release && \
     yum -y install \
-        php72-php-cli \
-        php72-php-xml \
-        php72-php-pecl-xdebug \
-        php72-php-mbstring \
-        php72-php-pdo \
-        php72-php-process \
-        php72-php-zip \
-        php72-php-sodium \
-        php72-php-gd \
-        php72-php-pecl-mailparse && \
+        make \
+        php73-php-cli \
+        php73-php-xml \
+        php73-php-pecl-xdebug \
+        php73-php-mbstring \
+        php73-php-pdo \
+        php73-php-process \
+        php73-php-zip \
+        php73-php-sodium \
+        php73-php-gd \
+        php73-php-pecl-mailparse && \
     yum clean all
 
 CMD [ "make", "-C", "/tuleap", "phpunit-run-as-owner" ]
