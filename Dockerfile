@@ -4,9 +4,9 @@ COPY remi-safe.repo /etc/yum.repos.d/
 
 RUN yum install -y epel-release && \
     yum -y install \
+        make \
         php72-php-cli \
         php72-php-xml \
-        php72-php-pecl-xdebug \
         php72-php-mbstring \
         php72-php-pdo \
         php72-php-process \
