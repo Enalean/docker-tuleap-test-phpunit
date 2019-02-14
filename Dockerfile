@@ -7,7 +7,6 @@ RUN yum install -y epel-release && \
         make \
         php73-php-cli \
         php73-php-xml \
-        php73-php-pecl-xdebug \
         php73-php-mbstring \
         php73-php-pdo \
         php73-php-process \
