@@ -15,7 +15,8 @@ RUN yum install -y epel-release && \
         php73-php-gd \
         php73-php-pecl-mailparse \
         php73-php-pecl-pcov && \
-    yum clean all
+    yum clean all && \
+    echo 'pcov.enabled = 1' >> /etc/opt/remi/php73/php.d/40-pcov.ini
 
 CMD [ "make", "-C", "/tuleap", "phpunit-run-as-owner" ]
 
