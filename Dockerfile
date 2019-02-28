@@ -13,6 +13,7 @@ RUN yum install -y epel-release && \
         php72-php-zip \
         php72-php-sodium \
         php72-php-gd \
+        php72-php-soap \
         php72-php-pecl-mailparse \
         php72-php-pecl-pcov && \
     yum clean all && \
