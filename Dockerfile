@@ -17,8 +17,9 @@ RUN yum install -y epel-release && \
         php74-php-ldap \
         php74-php-pecl-mailparse \
         php74-php-pecl-redis \
-        php74-php-pecl-pcov && \
-    yum clean all && \
+        php74-php-pecl-pcov \
+        perl \
+    && yum clean all && \
     echo 'pcov.enabled = 1' >> /etc/opt/remi/php74/php.d/40-pcov.ini
 
 CMD [ "make", "-C", "/tuleap", "phpunit-run-as-owner" ]
