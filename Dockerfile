@@ -2,9 +2,12 @@ FROM centos:7
 
 COPY remi-safe.repo /etc/yum.repos.d/
 
-RUN yum install -y epel-release && \
+RUN yum install -y epel-release \
+    centos-release-scl && \
     yum -y install \
         make \
+        git \
+        sclo-git212-git \
         php73-php-cli \
         php73-php-xml \
         php73-php-mbstring \
