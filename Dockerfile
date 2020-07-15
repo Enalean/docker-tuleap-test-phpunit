@@ -8,6 +8,7 @@ RUN yum install -y epel-release \
         make \
         git \
         sclo-git212-git \
+        rh-git218 \
         php74-php-cli \
         php74-php-xml \
         php74-php-mbstring \
