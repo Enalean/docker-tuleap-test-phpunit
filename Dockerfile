@@ -8,6 +8,7 @@ RUN yum install -y epel-release \
         make \
         git \
         sclo-git212-git \
+        rh-git218 \
         php73-php-cli \
         php73-php-xml \
         php73-php-mbstring \
