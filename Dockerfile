@@ -20,6 +20,7 @@ RUN yum install -y epel-release \
         php74-php-soap \
         php74-php-ldap \
         php74-php-intl \
+        php74-php-mysqlnd \
         php74-php-pecl-mailparse \
         php74-php-pecl-redis \
         php74-php-pecl-pcov \
