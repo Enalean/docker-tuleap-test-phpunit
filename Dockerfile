@@ -22,7 +22,7 @@ RUN yum install -y epel-release \
         php80-php-intl \
         php80-php-mysqlnd \
         php80-php-pecl-mailparse \
-        php80-php-pecl-redis \
+        php80-php-pecl-redis5 \
         php80-php-pecl-pcov \
         perl \
     && yum clean all && \
