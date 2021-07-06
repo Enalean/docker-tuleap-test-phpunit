@@ -5,6 +5,7 @@ on:
     branches:
       - c7-php74
       - c7-php80
+      - c7-php81
   workflow_dispatch:
 
 permissions:
