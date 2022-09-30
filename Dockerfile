@@ -20,6 +20,7 @@ RUN yum install -y epel-release \
         php80-php-soap \
         php80-php-ldap \
         php80-php-intl \
+	php80-php-ffi \
         php80-php-mysqlnd \
         php80-php-pecl-mailparse \
         php80-php-pecl-redis5 \
