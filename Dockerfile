@@ -20,6 +20,7 @@ RUN yum install -y epel-release \
         php81-php-ldap \
         php81-php-intl \
         php81-php-mysqlnd \
+        php81-php-ffi \
         php81-php-pecl-mailparse \
         php81-php-pecl-redis5 \
         php81-php-pecl-pcov \
