@@ -1,13 +1,14 @@
 FROM centos:7
 
 COPY remi-safe.repo /etc/yum.repos.d/
+COPY Tuleap.repo /etc/yum.repos.d/
 
 RUN yum install -y epel-release \
     centos-release-scl && \
     yum -y install \
         make \
-        git \
-        rh-git218 \
+        tuleap-git-bin \
+        openssh \
         php81-php-cli \
         php81-php-xml \
         php81-php-mbstring \
