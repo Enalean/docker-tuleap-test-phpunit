@@ -25,6 +25,7 @@ RUN dnf install -v -y epel-release https://rpms.remirepo.net/enterprise/remi-rel
         ${PHP_BASE}-php-pecl-redis5 \
         ${PHP_BASE}-php-pecl-pcov \
         perl \
+        glibc-locale-source \
     && dnf clean all && \
     echo 'pcov.enabled = 1' >> /etc/opt/remi/${PHP_BASE}/php.d/40-pcov.ini
 
