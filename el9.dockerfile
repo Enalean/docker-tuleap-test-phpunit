@@ -26,7 +26,10 @@ RUN dnf install -v -y epel-release https://rpms.remirepo.net/enterprise/remi-rel
         ${PHP_BASE}-php-pecl-pcov \
         perl \
     && dnf clean all && \
-    echo 'pcov.enabled = 1' >> /etc/opt/remi/${PHP_BASE}/php.d/40-pcov.ini
+    echo 'pcov.enabled = 1' >> /etc/opt/remi/${PHP_BASE}/php.d/40-pcov.ini && \
+    localedef -i fr_FR -c -f UTF-8 fr_FR.UTF-8 && \
+    localedef -i en_US -c -f UTF-8 en_US.UTF-8 && \
+    localedef -i en_GB -c -f UTF-8 en_GB.UTF-8
 
 CMD [ "make", "-C", "/tuleap", "phpunit-run-as-owner" ]
 
