@@ -4,7 +4,8 @@ ARG PHP_BASE
 
 COPY Tuleap.repo /etc/yum.repos.d/
 
-RUN dnf install -v -y epel-release https://rpms.remirepo.net/enterprise/remi-release-9.rpm && \
+RUN dnf install -v -y epel-release rocky-release-security https://rpms.remirepo.net/enterprise/remi-release-9.rpm && \
+    dnf update -y && \
     dnf -v -y install \
         make \
         tuleap-git-bin \
